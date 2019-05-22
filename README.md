@@ -18,7 +18,7 @@ In order to use the plugin you need to get the API keys from your [Mailjet accou
 2. Fill all the required fields in the Mailjet configuration tab (API key API secret Template Id... )
 3. Fill the texts in Subscribe form and Double Optin tabs
 4. Create a confirmation page in the CMS and add and configure the `doubleOptin` component to it, set the page URL with `:vkey` and `:umail` parameters. Ex: /newsletter-optin/:vkey/:umail
-5. Add and congigure the `subscribeForm` component in the pages or layout you want.
+5. Add and configure the `subscribeForm` component in the pages or layouts you want.
 
 Note: in the Subscribe Form settings tab the sender email must be allowed as sender for your Mailjet account
 
