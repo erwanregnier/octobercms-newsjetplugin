@@ -1,0 +1,96 @@
+tabs:
+    fields:
+        section_title:
+            label: 'Mailjet Configuration'
+            span: left
+            type: section
+            tab: 'Mailjet'
+        api_key:
+            label: 'Mailjet Api Key'
+            type: text
+            span: left
+            required: true
+            tab: 'Mailjet'
+        api_secret:
+            label: 'Mailjet Secret Key'
+            type: text
+            span: right
+            required: true
+            tab: 'Mailjet'
+        sender_name:
+            label: 'Confirmation email sender name'
+            type: text
+            span: left
+            required: true
+            tab: 'Mailjet'
+        sender_mail:
+            label: 'Confirmation email sender email'
+            type: text
+            span: right
+            required: true
+            tab: 'Mailjet'
+        template_id:
+            label: 'Mailjet Template ID'
+            comment: 'Your Mailjet template ID for the confirmation link. This field is translatable, you can use a different template for each language. In your template you must use the Mailjet Variable "confirm_link" for the confirmation link: {{variable:confirm_link}}'
+            type: text
+            span: left
+            required: true
+            tab: 'Mailjet'
+        section_form_title:
+            label: 'Subscribe form texts and fields'
+            type: section
+            tab: 'Subscribe Form'
+        email_text:
+            label: 'Email placeholder'
+            type: text
+            span: left
+            tab: 'Subscribe Form'
+        submit_text:
+            label: Submit button text
+            type: text
+            span: right
+            tab: 'Subscribe Form'
+        consent_fields:
+            label: 'Consent checkbox fields'
+            titleFrom: consent_text
+            type: repeater
+            comment: 'You should add at least one field for the privacy consent (GDPR law)'
+            tab: 'Subscribe Form'
+            form:
+                fields:
+                    consent_text:
+                        label: 'Checkbox text'
+                        type: richeditor
+                        toolbarButtons: insertLink
+                        size: tiny
+                    consent_required:
+                        label: 'Is required'
+                        type: checkbox
+        confirm_text:
+            label: 'Confirmation message'
+            comment: 'Displayed after the user validated the form successfully'
+            type: richeditor
+            size: small
+            tab: 'Subscribe Form'
+        section_optin_title:
+            label: 'Optin page texts'
+            type: section
+            tab: 'DoubleOptin page'
+        optin_confirm:
+            label: 'Confirmation message'
+            comment: 'Displayed when successfully added to the configured Mailjet List'
+            type: richeditor
+            size: medium
+            tab: 'DoubleOptin page'
+        optin_error:
+            label: 'Error message'
+            comment: 'Displayed when it was impossible to add the user email the configured Mailjet List'
+            type: richeditor
+            size: medium
+            tab: 'DoubleOptin page'
+        validate_error:
+            label: 'Wrong validation code message'
+            comment: 'Displayed when the validation token are wrong'
+            type: richeditor
+            size: medium
+            tab: 'DoubleOptin page'

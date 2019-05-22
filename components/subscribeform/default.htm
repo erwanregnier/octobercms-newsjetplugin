@@ -1,0 +1,5 @@
+{% if mailjet_config %}
+	{% partial __SELF__~'::subscribe-form' %}
+{% else %}
+	You must set your Mailjet API keys first
+{% endif %}

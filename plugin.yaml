@@ -1,0 +1,11 @@
+plugin:
+    name: 'eregnier.newsjetplugin::lang.plugin.name'
+    description: 'Newsletter with Mailjet integration'
+    author: 'Erwan Regnier'
+    icon: oc-icon-mail-forward
+    homepage: 'http://eregnier.it'
+navigation:
+    main-menu-item:
+        label: 'Mailjet config'
+        url: /
+        icon: icon-dashboard

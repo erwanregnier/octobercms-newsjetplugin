@@ -1,0 +1,22 @@
+{
+    "name": "eregnier/newsjet_plugin",
+    "description": "Newsletter subscribtion form for Mailjet",
+    "keywords": ["mailjet", "php", "email", "october", "octobercms", "plugin", "newsletter"],
+    "homepage": "https://eregnier.it",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erwan Regnier",
+            "email": "dev@eregnier.it",
+            "homepage": "https://eregnier.it"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "~6.0|~5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "php-coveralls/php-coveralls": "^1.0"
+    }
+}

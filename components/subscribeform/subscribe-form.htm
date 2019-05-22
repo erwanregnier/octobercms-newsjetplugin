@@ -1,0 +1,18 @@
+<div class="newsjet_subscribe_container">
+	<div class="newsjet_subscribe_error"></div>
+	<form
+		class="signup"
+		data-request="{{ __SELF__ }}::onMailSend"
+		data-request-update="'{{ __SELF__ }}::confirm': '.newsjet_subscribe_container'"
+	>
+			<div class="col-xs-12 col-sm-6">
+				<input name="email" type="email" class="form-control text-center" placeholder="{{text.email}}">
+				{% for consent in consent_fields %}
+					<input type="checkbox" {% if consent.consent_required %}required{% endif %} name="consent_field_{{loop.index}}">  {{consent.consent_text|striptags('<a>')|raw}}{% if loop.last == false %}<br>{% endif %}
+				{% endfor %}
+			</div>
+			<div class="col-xs-12 col-sm-3 text-center">
+				<button type="submit" data-attach-loading class="theme_button color2">{{text.submit}}</button>	
+			</div>
+	</form>
+</div>
