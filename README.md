@@ -5,10 +5,11 @@ Mailjet integration plugin
 This plugin implements the Mailjet API with a subscription form functionality for the OctoberCMS.
 
 ## Features
-+ Add subscribers to the Mailjet Contact list of your choice
-+ Support the GDPR: you can add as many checkbox (required or not) as you need
-+ Double optin: send your Mailjet template with confirmation link to validate the subscription
-+ Multilanguage: compatible with Rainlab.Translate plugin, you can set different messages and Mailjet template for each language
++ Add subscribers to the Mailjet Contact list of your choice and **send them your newsletters** from Mailjet
++ Support the **GDPR**: you can add as many checkbox (required or not) as you need
++ **Double optin**: send your Mailjet template with confirmation link to validate the subscription
++ Use your [Mailjet transactional template](https://app.mailjet.com/templates/transactional) for the confirmation link email
++ **Multilanguage**: compatible with [Rainlab.Translate](http://octobercms.com/plugin/rainlab-translate) plugin, you can set different messages and Mailjet template for each language
 
 ## Configuring
 
@@ -20,7 +21,7 @@ In order to use the plugin you need to get the API keys from your [Mailjet accou
 4. Create a confirmation page in the CMS and add and configure the `doubleOptin` component to it, set the page URL with `:vkey` and `:umail` parameters. Ex: /newsletter-optin/:vkey/:umail
 5. Add and configure the `subscribeForm` component in the pages or layouts you want.
 
-Note: in the Subscribe Form settings tab the sender email must be allowed as sender for your Mailjet account
+Note: in the Subscribe Form settings tab the sender email must be allowed as sender in your [Mailjet account](https://app.mailjet.com/account/sender)
 
 That's it!
 
