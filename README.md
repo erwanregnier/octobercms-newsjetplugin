@@ -17,7 +17,7 @@ In order to use the plugin you need to get the API keys from your [Mailjet accou
 1. In the OctoberCMS back-end go to the Settings page and click the Mailjet Config link. 
 2. Fill all the required fields in the Mailjet configuration tab (API key API secret Template Id... )
 3. Fill the texts in Subscribe form and Double Optin tabs
-4. Create a confirmation page in the CMS and add and configure the `doubleOptin` component to it
+4. Create a confirmation page in the CMS and add and configure the `doubleOptin` component to it, set the page URL with `:vkey` and `:umail` parameters. Ex: /newsletter-optin/:vkey/:umail
 5. Add and congigure the `subscribeForm` component in the pages or layout you want.
 
 
