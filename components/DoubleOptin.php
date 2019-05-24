@@ -77,7 +77,7 @@ class DoubleOptin extends ComponentBase
 
     private function addMailjetContact($email)
     {
-    	return false;
+
     	$mj = new Mailjet($this->api_key, $this->api_secret);
     	$body= ['Email' => $email, 'Action' => 'addforce'];
 

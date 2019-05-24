@@ -21,6 +21,8 @@ In order to use the plugin you need to get the API keys from your [Mailjet accou
 4. Create a confirmation page in the CMS and add and configure the `doubleOptin` component to it, set the page URL with `:vkey` and `:umail` parameters. Ex: /newsletter-optin/:vkey/:umail
 5. Add and configure the `subscribeForm` component in the pages or layouts you want.
 
+**You must add the [OctoberCMS Ajax framework](https://octobercms.com/docs/ajax/introduction#framework-script) on the page or layouts in order to make the `subscribeForm` component work.**
+
 Note: in the Subscribe Form settings tab the sender email must be allowed as sender in your [Mailjet account](https://app.mailjet.com/account/sender)
 
 That's it!
